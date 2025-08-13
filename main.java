@@ -22,7 +22,7 @@ public class main {
         car2.display();
         car3.display();
 
-        car1.wheels = 6; // Change from one object
+        car1.wheels = 6; 
         System.out.println("\nAfter changing wheels:");
         car2.display();
         car3.display();
@@ -57,7 +57,7 @@ public class main {
             int num = 10;
 
             void show() {
-                int num = 20; // local variable
+                int num = 20; 
                 System.out.println("Local num: " + num);
                 System.out.println("Instance num: " + this.num);
             }
@@ -67,7 +67,7 @@ public class main {
 
  
     static void localVariableError() {
-        System.out.println("Cannot run here: Local variables must be initialized before use.");
+        System.out.println("Cannot run");
     }
 
     static void rectangleExample() {
@@ -153,8 +153,8 @@ public class main {
         System.out.println("char: " + letter);
         System.out.println("boolean: " + flag);
 
-        double numToDouble = num; // int -> double
-        int doubleToInt = (int) decimal; // double -> int
+        double numToDouble = num; 
+        int doubleToInt = (int) decimal; 
 
         System.out.println("int to double: " + numToDouble);
         System.out.println("double to int: " + doubleToInt);
@@ -217,7 +217,7 @@ public class main {
         acc1.display();
         acc2.display();
 
-        BankAccount.bankName = "SuperBank"; // Change for all
+        BankAccount.bankName = "SuperBank"; 
         acc1.display();
         acc2.display();
     }
@@ -356,5 +356,28 @@ public class main {
         // pc(x,y);
         // aot(x,y,z);
         // ktm(x);
+
+        //  studentMarksExample();
+
+        // carExample();                
+        // studentPassFail();            
+        // thisKeywordExample();         
+        // rectangleExample();           
+        // employeeExample();            
+        // laptopExample();              
+        // bankAccountExample();         
+        // circleExample();              
+        // personAgeExample();           
+
+    
+        // primitiveConversion();        
+        // averageMarks();
+        // vowelCheck('e');              
+        // accessCheck(true);            
+        // swapExample();                 
+        // reverseString("Java");        
+        // primeCheck(17);               
+        // System.out.println("Factorial: " + factorial(5)); 
+
     }
 }
