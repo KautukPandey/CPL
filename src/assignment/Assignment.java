@@ -19,15 +19,31 @@ class Student {
         System.out.println("Name: " + name + ", Age: " + age);
     }
 }
+class Person {
+
+    String name = "Instance Variable Name";
+
+    void showName() {
+        String name = "Local Variable Name";
+
+        System.out.println("Local variable: " + name);
+
+        System.out.println("Instance variable: " + this.name);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
 //        MyClass.display();
 		
-		Student s1 = new Student("Alice", 20);
-        Student s2 = new Student("Bob", 22);
-
-        s1.display();
-        s2.display();
+//		Student s1 = new Student("Alice", 20);
+//        Student s2 = new Student("Bob", 22);
+//
+//        s1.display();
+//        s2.display();
+		
+		
+		Person p = new Person();
+        p.showName();
 	}
 }
