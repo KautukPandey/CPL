@@ -110,6 +110,123 @@ class Demo{
         System.out.println("Local Variable: " + localVar);
     }
 }
+class car {
+	String model;
+	int year;
+	static int numberOfCars = 0;
+	
+	void car(String model, int year) {
+		this.model = model;
+		this.year = year;
+		numberOfCars++;
+	}
+	
+	void displayDetails() {
+		System.out.println("Model : " + model + "year : " + year);
+	}
+	
+}
+class Q3 {
+	public static int method() {
+		int count = 10;
+		return count;
+	}
+	
+	public static void main() {
+		System.out.println(method());
+	}
+}
+class Q5 {
+	static int count = 0;
+	String name;
+	
+	public Q5(String name) {
+		this.name = name;
+	}
+	
+	public static void main() {
+		Q5 ob1 = new Q5("Object 1");
+		ob1.count = 5;
+		
+		Q5 ob2 = new Q5("Object 2");
+		System.out.println(ob2.name + " count as: " + ob2.count);
+	}
+}
+class Account {
+    String accountHolder;  
+    double balance;        
+
+    public static void main(String[] args) {
+        Account acc = new Account(); 
+        System.out.println("Account Holder: " + acc.accountHolder);
+        System.out.println("Balance: " + acc.balance);
+    }
+}
+class Demo {
+	int count;
+	
+	public Demo(int count) {
+		this.count = count;
+	}
+	
+	public void showNumber() {
+		int count = 50;
+		System.out.println("Instance variable " + this.count);
+		System.out.println("Local variable " + count);	
+	}
+	
+	public static void main(String[] args) {
+        Demo obj = new Demo(100);
+        obj.showNumber(); 
+	}
+}
+class finalVariable {
+	final int var = 100;
+	
+	public static void main() {
+		finalVariable ob = new finalVariable();
+		System.out.println("Initially : " + ob.value);
+		
+		ob.value = 200;
+		System.out.println("Updated : " + ob.value);
+	}
+}
+class staticDemo {
+	
+    static int number;
+
+    static {
+        number = 50;
+        System.out.println("Static block executed. Number initialized to " + number);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Main method executed.");
+        System.out.println("Value of number: " + number);
+    }
+}
+class Student {
+	String name;
+	int marks;
+	
+
+	public Student(String name, int marks) {
+		this.name = name;
+		this.marks = marks;
+	}
+	
+	public void print() {
+		System.out.println("Name : " + name + "Marks" + marks);
+	}
+	
+	public static void main() {
+		Student st1 = new Student("Garv", 100);
+		Student st2 = new Student("Kautuk", 99);
+		
+		st1.print();
+		st2.print();
+	}
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
