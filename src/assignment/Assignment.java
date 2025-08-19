@@ -6,19 +6,19 @@ class MyClass {
         System.out.println(count);
     }
 }
-class Student {
-    String name;
-    int age;
-
-    Student(String n, int a) {
-        name = n;
-        age = a;
-    }
-
-    void display() {
-        System.out.println("Name: " + name + ", Age: " + age);
-    }
-}
+//class Student {
+//    String name;
+//    int age;
+//
+//    Student(String n, int a) {
+//        name = n;
+//        age = a;
+//    }
+//
+//    void display() {
+//        System.out.println("Name: " + name + ", Age: " + age);
+//    }
+//}
 class Person {
 
     String name = "Instance Variable Name";
@@ -64,6 +64,16 @@ class Counter {
         System.out.println("Current value: " + value);
     }
 }
+class Student {
+    String name;
+
+    void setName(String name) {
+        this.name = name;
+    }
+    void display() {
+        System.out.println("Student name: " + name);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -88,12 +98,20 @@ public class Assignment {
 //        t.show();
 //        Compile Error	
 		
-		Counter c = new Counter();
+//		Counter c = new Counter();
+//
+//        c.display();    
+//        c.increment();  
+//        c.increment();  
+//        c.decrement();  
+//        c.display();
+		
+		Student s1 = new Student();
+        s1.setName("Alice");  
+        s1.display();
 
-        c.display();    
-        c.increment();  
-        c.increment();  
-        c.decrement();  
-        c.display();
+        Student s2 = new Student();
+        s2.setName("Bob");
+        s2.display();
 	}
 }
