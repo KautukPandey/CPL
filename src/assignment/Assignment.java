@@ -74,6 +74,16 @@ class Student {
         System.out.println("Student name: " + name);
     }
 }
+class A {
+    static int x = 10;
+}
+
+class B {
+    void modifyAndPrint() {
+        A.x = 50;
+        System.out.println("Value of x in class B: " + A.x);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -106,12 +116,19 @@ public class Assignment {
 //        c.decrement();  
 //        c.display();
 		
-		Student s1 = new Student();
-        s1.setName("Alice");  
-        s1.display();
+//		Student s1 = new Student();
+//        s1.setName("Alice");  
+//        s1.display();
+//
+//        Student s2 = new Student();
+//        s2.setName("Bob");
+//        s2.display();
+        
+        System.out.println("Initial value of x in class A: " + A.x);
 
-        Student s2 = new Student();
-        s2.setName("Bob");
-        s2.display();
+        B obj = new B();
+        obj.modifyAndPrint();
+
+        System.out.println("Value of x in class A after modification: " + A.x);
 	}
 }
