@@ -38,7 +38,14 @@ class Pi{
     }
 
 }
+class Test {
+    void show() {
+        int x;  
 
+        x = 10; 
+        System.out.println("local variable: " + x);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -54,9 +61,12 @@ public class Assignment {
 //		Person p = new Person();
 //        p.showName();
 		
-		System.out.println("PI = " + Pi.pi);
-
-        Pi c = new Pi();
-        c.showConstant();
+//		System.out.println("PI = " + Pi.pi);
+//
+//        Pi c = new Pi();
+//        c.showConstant();
+		
+		Test t = new Test();
+        t.show();
 	}
 }
