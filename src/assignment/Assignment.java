@@ -31,6 +31,14 @@ class Person {
         System.out.println("Instance variable: " + this.name);
     }
 }
+class Pi{
+	static double pi = 3.14;
+	void showConstant() {
+        System.out.println("Value of PI: " + pi);
+    }
+
+}
+
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -43,7 +51,12 @@ public class Assignment {
 //        s2.display();
 		
 		
-		Person p = new Person();
-        p.showName();
+//		Person p = new Person();
+//        p.showName();
+		
+		System.out.println("PI = " + Pi.pi);
+
+        Pi c = new Pi();
+        c.showConstant();
 	}
 }
