@@ -98,6 +98,18 @@ class User{
 class Empty{
 	static int num;
 }
+class Demo{
+	int instanceVar = 10;
+    static int staticVar = 20;
+
+    void showVariables() {
+        int localVar = 30;
+
+        System.out.println("Instance Variable: " + instanceVar);
+        System.out.println("Static Variable: " + staticVar);
+        System.out.println("Local Variable: " + localVar);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -151,8 +163,11 @@ public class Assignment {
 //        u1.display();
 //        u2.display();
 		
-		System.out.println(Empty.num);
-		Empty.num = 1;
-		System.out.println(Empty.num);
+//		System.out.println(Empty.num);
+//		Empty.num = 1;
+//		System.out.println(Empty.num);
+		
+		Demo d = new Demo();
+        d.showVariables();
 	}
 }
