@@ -95,6 +95,9 @@ class User{
         System.out.println("User ID: " + userId);
     }
 }
+class Empty{
+	static int num;
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -142,10 +145,14 @@ public class Assignment {
 //
 //        System.out.println("Value of x in class A after modification: " + A.x);
 		
-		User u1 = new User(101);
-        User u2 = new User(202);
-
-        u1.display();
-        u2.display();
+//		User u1 = new User(101);
+//        User u2 = new User(202);
+//
+//        u1.display();
+//        u2.display();
+		
+		System.out.println(Empty.num);
+		Empty.num = 1;
+		System.out.println(Empty.num);
 	}
 }
