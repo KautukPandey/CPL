@@ -84,6 +84,17 @@ class B {
         System.out.println("Value of x in class B: " + A.x);
     }
 }
+
+class User{
+	final int userId;
+    User(int id) {
+        userId = id;
+    }
+
+    void display() {
+        System.out.println("User ID: " + userId);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -124,11 +135,17 @@ public class Assignment {
 //        s2.setName("Bob");
 //        s2.display();
         
-        System.out.println("Initial value of x in class A: " + A.x);
+//        System.out.println("Initial value of x in class A: " + A.x);
+//
+//        B obj = new B();
+//        obj.modifyAndPrint();
+//
+//        System.out.println("Value of x in class A after modification: " + A.x);
+		
+		User u1 = new User(101);
+        User u2 = new User(202);
 
-        B obj = new B();
-        obj.modifyAndPrint();
-
-        System.out.println("Value of x in class A after modification: " + A.x);
+        u1.display();
+        u2.display();
 	}
 }
