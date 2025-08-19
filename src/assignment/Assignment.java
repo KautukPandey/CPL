@@ -46,6 +46,24 @@ class Test {
         System.out.println("local variable: " + x);
     }
 }
+class Counter {
+    int value = 0;
+
+   
+    void increment() {
+        value++;
+        System.out.println("After increment: " + value);
+    }
+
+    void decrement() {
+        value--;
+        System.out.println("After decrement: " + value);
+    }
+
+    void display() {
+        System.out.println("Current value: " + value);
+    }
+}
 public class Assignment {
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
@@ -66,7 +84,16 @@ public class Assignment {
 //        Pi c = new Pi();
 //        c.showConstant();
 		
-		Test t = new Test();
-        t.show();
+//		Test t = new Test();
+//        t.show();
+//        Compile Error	
+		
+		Counter c = new Counter();
+
+        c.display();    
+        c.increment();  
+        c.increment();  
+        c.decrement();  
+        c.display();
 	}
 }
