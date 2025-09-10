@@ -160,11 +160,7 @@ class Account {
         Account acc = new Account(); 
         System.out.println("Account Holder: " + acc.accountHolder);
         System.out.println("Balance: " + acc.balance);
-
     }
-
-	}
-
 }
 class Demo {
 	int count;
@@ -207,21 +203,14 @@ class staticDemo {
     public static void main(String[] args) {
         System.out.println("Main method executed.");
         System.out.println("Value of number: " + number);
-
     }
 }
-
-class Student1 {
-
+class Student {
 	String name;
 	int marks;
 	
 
-
-	
-
-	public Student1(String name, int marks) {
-
+	public Student(String name, int marks) {
 		this.name = name;
 		this.marks = marks;
 	}
@@ -239,7 +228,6 @@ class Student1 {
 	}
 }
 public class Assignment {
-	
 	public static void main(String[]args) {
 //		System.out.println(MyClass.count);
 //        MyClass.display();
@@ -298,16 +286,5 @@ public class Assignment {
 		
 		Demo d = new Demo();
         d.showVariables();
-        car ob1 = new car();
-		car ob2 = new car();
-		
-		ob1.car("Toyota Camry", 2020);
-		ob2.car("Honda Civic", 2022);
-		
-		
-		ob1.displayDetails();
-        ob2.displayDetails();
-        
-        System.out.print(numberOfCars);
 	}
 }
